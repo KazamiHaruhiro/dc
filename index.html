@@ -12,11 +12,12 @@ h2{font-size:1.15rem;margin-top:1.6em}
 a{color:#1d4ed8}
 .muted{color:#6b7280;font-size:.9rem}
 nav a{margin-right:14px}
+code{background:#f3f4f6;padding:1px 5px;border-radius:4px;font-size:.9em}
 </style>
 </head>
 <body>
 <h1>Drive Collector</h1>
-<p class="muted">A private, single-operator tool for managing the owner's own Google Drive storage.</p>
+<p class="muted">A private, single-operator tool for organising the owner&rsquo;s own Google Drive storage.</p>
 
 <nav>
   <a href="./">Home</a>
@@ -26,14 +27,20 @@ nav a{margin-right:14px}
 
 <h2>What it does</h2>
 <p>Drive Collector is used by its owner to organise, de-duplicate and audit files that the owner
-already stores in the owner's own Google Drive accounts. It reads and manages only files that
+already stores in the owner&rsquo;s own Google Drive accounts. It reads and manages only files that
 belong to the owner.</p>
 
 <h2>Who uses it</h2>
-<p>One person: the owner of the Google account(s) that authorise the application. There are no
-other users, no sign-up, and no third parties.</p>
+<p>A single operator &mdash; the owner of the Google account(s) that authorise the application.
+There is no sign-up, no public access, and no third-party users.</p>
+
+<h2>Scope of access</h2>
+<p>The application requests the <code>https://www.googleapis.com/auth/drive</code> scope so it can
+list, verify, rename, de-duplicate and organise files in the authorising account. All processing
+happens on infrastructure controlled by the operator.</p>
 
 <h2>Contact</h2>
-<p>Email: <a href="mailto:giornoyuda20@gmail.com">giornoyuda20@gmail.com</a></p>
+<p>Questions or requests can be raised through the project&rsquo;s issue tracker:
+<a href="https://github.com/KazamiHaruhiro/dc/issues">github.com/KazamiHaruhiro/dc/issues</a></p>
 </body>
 </html>
